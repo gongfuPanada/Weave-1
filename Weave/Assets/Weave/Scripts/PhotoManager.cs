@@ -67,7 +67,8 @@ public class PhotoManager : MonoBehaviour {
             GameObject photoFrame = GameObject.CreatePrimitive(PrimitiveType.Quad);
 
             photoFrame.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 3f;
-            Texture2D texture = new Texture2D(2, 2);
+            new Vector3(.5f, 0.3f, 1f);
+            Texture2D texture = new Texture2D(1,1);
             Renderer renderer = photoFrame.GetComponent<Renderer>();
             byte[] imageData;
             imageData = System.IO.File.ReadAllBytes(filePath);

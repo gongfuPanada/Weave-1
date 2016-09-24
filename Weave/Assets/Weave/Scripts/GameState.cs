@@ -12,13 +12,13 @@ public class GameState : Singleton<GameState> {
         Debug.Log(filePath);
         narrative = Narrative.Load(filePath);
 
-        //Station item = new Station();
-        //Artefact art = new Artefact();
-        //art.Name = "ART";
+        Station item = new Station();
+        Artefact art = new Artefact();
+        art.Name = "ART";
 
-        //item.Name = "station";
-        //item.Artefacts.Add(art);
-        //narrative.StationCollection.Add(item);
+        item.Name = "station";
+        item.Artefacts.Add(art);
+        narrative.StationCollection.Add(item);
     }
     // Use this for initialization
     void Start () {
